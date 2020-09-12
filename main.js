@@ -20,6 +20,9 @@ class MyComponent extends Component {
 	}
 }
 
-let component = <MyComponent/>;
+	
 
-console.log(component.vdom);
+render(
+	<MyComponent id="id" class="class"></MyComponent>,
+	document.getElementById("app")
+)
